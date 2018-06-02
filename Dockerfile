@@ -7,6 +7,7 @@ RUN apt-get update -y \
         $PHPIZE_DEPS \
         zlib1g-dev \
         texlive \
+        texlive-full \
     && docker-php-ext-install zip \
     && docker-php-source delete \
     && rm -rf /tmp/pear ~/.pearrc \
